@@ -3,7 +3,7 @@ class CreatePastLives < ActiveRecord::Migration[6.1]
     create_table :past_lives do |t|
       t.string :klass
       t.integer :quantity
-      t.reference :character
+      t.references :character
 
       t.timestamps
     end
